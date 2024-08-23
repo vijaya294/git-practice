@@ -1,6 +1,3 @@
 #!/bin/bash
 
-hi 
-hello
-happy
-devops aws
+i am learning devops aws and this is 10th session
