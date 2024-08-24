@@ -2,8 +2,8 @@
 
 echo "print usernmae ::"
 
-read username
+read -s username
 
 echo "enter password ::"
 
-read password
+read -s password
