@@ -48,3 +48,16 @@ else
     echo "mysql is already installed"
 fi
 
+
+
+# output :
+
+# Installed Packages
+# git.x86_64                        2.43.0-1.el9                         @rhel-9-appstream-rhui-rpms
+# listing git is success
+# git is already installed, nothong to do
+# Error: No matching Packages to list
+# mysql is not installed
+
+# Complete!
+# installing mysql is success
