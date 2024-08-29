@@ -7,9 +7,10 @@ then
     echo "please log in with root privilege"
 else
     echo "logged in as root user successfully"
+    exit 1
 fi
 
-dnf installed mysql -y
+
 
 
 
