@@ -10,22 +10,22 @@ else
     exit 1
 fi
 
-dnf list installed mysql
+# dnf list installed mysql
 
-if [ $? -ne 0 ]
-then 
-    echo "mysql is not installed, going to install"
-    dnf install mysql -y
-    if [ $? -ne 0 ]
-    then    
-        echo "mysql installation is a falure"
-        exit 1
-    else
-        echo "mysql installation is success"
-    fi
-else
-    echo "mysql is alredy installed successfully......."
-fi
+# if [ $? -ne 0 ]
+# then 
+#     echo "mysql is not installed, going to install"
+#     dnf install mysql -y
+#     if [ $? -ne 0 ]
+#     then    
+#         echo "mysql installation is a falure"
+#         exit 1
+#     else
+#         echo "mysql installation is success"
+#     fi
+# else
+#     echo "mysql is alredy installed successfully......."
+# fi
 
 
 
@@ -58,41 +58,41 @@ fi
 #     exit 1
 # fi
 
-# dnf list installed git
+dnf list installed git
 
-# if [ $? -ne 0 ]
-# then 
-#     echo "git is not installed, going to install it"
+if [ $? -ne 0 ]
+then 
+    echo "git is not installed, going to install it"
 
-#     dnf install git -y
-#     if [ $? -ne 0 ]
-#     then
-#         echo "git installation is not success"
-#         exit 1
-#     else
-#         echo "git installation is success"
-#     fi
+    dnf install git -y
+    if [ $? -ne 0 ]
+    then
+        echo "git installation is not success"
+        exit 1
+    else
+        echo "git installation is success"
+    fi
 
-# else
-#     echo "git is already installed, nothong to do"
-# fi
+else
+    echo "git is already installed, nothong to do"
+fi
 
-# dnf list installed mysql
+dnf list installed mysql
 
-# if [ $? -ne 0 ]
-# then
-#     echo "mysql is not installed"
+if [ $? -ne 0 ]
+then
+    echo "mysql is not installed"
 
-#     dnf install mywal -y
-#     if [ $? -ne 0 ]
-#     then 
-#         echo "mysql installation is failure"
-#         exit 1
-#     else 
-#         echo "mysql installation is success"
-#     fi
+    dnf install mywal -y
+    if [ $? -ne 0 ]
+    then 
+        echo "mysql installation is failure"
+        exit 1
+    else 
+        echo "mysql installation is success"
+    fi
 
-# else 
-#     echo "mysql is already installed"
-# fi
+else 
+    echo "mysql is already installed"
+fi
 
