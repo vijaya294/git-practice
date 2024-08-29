@@ -10,7 +10,7 @@ else
     exit 1
 fi
 
-dnf list install mysql
+dnf list installed mysql
 
 if [ $? -ne 0 ]
 then 
@@ -22,7 +22,8 @@ then
     else
         echo "mysql installation is success"
     fi
-echo "mysql is installed successfully"
+else
+    echo "mysql is installed successfully"
 fi
 
 
