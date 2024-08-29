@@ -10,6 +10,25 @@ else
     exit 1
 fi
 
+dnf list install mysql
+
+if [ $? -ne 0 ]
+then 
+    echo "mysql is not installed yet, will start install"
+    dnf install mysql -y
+    if [ $? -ne 0 ]
+    then    
+        echo "mysql installation is a falure"
+    else
+        echo "mysql installation is success"
+    fi
+echo "mysql is installed successfully"
+fi
+
+
+
+
+
 
 
 
