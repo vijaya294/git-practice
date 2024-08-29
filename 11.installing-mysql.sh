@@ -2,12 +2,14 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 1 ]
+if [ $USERID -ne 0 ]
 then 
     echo "please log in with root privilege"
 else
     echo "logged in as root user successfully"
 fi
+
+dnf installed mysql -y
 
 
 
