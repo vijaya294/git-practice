@@ -36,7 +36,7 @@ USAGE(){
     exit 1
 }
 
-if [ $USAGE -eq 0 ]
+if [ $# -eq 0 ]    #here $# means to kow how many arguments are there in a file
 then
     USAGE
 fi
