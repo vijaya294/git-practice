@@ -41,6 +41,8 @@ then
     USAGE
 fi
 
+echo "$G script executed date and time is : $(date) $N" &>>LOG_FILE
+
 for package in $@
 do
     dnf list installed $package &>>LOG_FILE
