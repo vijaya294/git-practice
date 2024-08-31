@@ -37,12 +37,13 @@ USAGE(){
     exit 1
 }
 
+echo "$G script executed date and time is : $(date) $N" &>>LOG_FILE
+
+
 if [ $# -eq 0 ]    #here $# means to kow how many arguments are there in a file
 then
     USAGE
 fi
-
-echo "$G script executed date and time is : $(date) $N" &>>LOG_FILE
 
 for package in $@
 do
