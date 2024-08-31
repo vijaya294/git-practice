@@ -33,7 +33,7 @@ VALIDATE(){
 }
 
 USAGE(){
-    echo -e "$R $USAGE :: sudo sh 15.loops-insalling-multiple-packages.sh package1 package2 ...$N" &>>LOG_FILE
+    echo -e "$R USAGE :: sudo sh 16-redirectors.sh package1 package2 ...$N" &>>LOG_FILE
     exit 1
 }
 
