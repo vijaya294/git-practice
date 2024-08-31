@@ -37,7 +37,7 @@ USAGE(){
     exit 1
 }
 
-echo "$G script executed date and time is : $(date) $N" | tee -a LOG_FILE
+echo -e "$G script executed date and time is : $(date) $N" | tee -a LOG_FILE
 
 
 if [ $# -eq 0 ]    #here $# means to kow how many arguments are there in a file
@@ -47,7 +47,7 @@ fi
 
 for package in $@
 do
-    dnf list installed $package &>>LOG_FILE
+    dnf list installed $package 
     if [ $? -ne 0 ]
     then    
         echo -e "$R $package not installed, going to install $N" | tee -a LOG_FILE
